@@ -18,3 +18,48 @@ body {
 img {
     width: 250px;
 }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+p {
+    font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 700px)  {
+    p {
+        { display: none; } 
+    }   
+}
+
+@media only screen and (min-width: 700px) {
+    body {
+        font-size: 3rem;
+        background-color: tan;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }    
+    p {
+        font-size: 1rem;
+    }   
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        font-size: 4rem;
+        background-color: olive;
+    }
+    h1 {
+        font-size: 3rem;
+    }    
+    p {
+        font-size: 1.5rem;
+    }
+}
