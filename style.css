@@ -10,9 +10,31 @@ body {
     background-color: var(--light);
 }
 
+.navbar {  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    flex-basis: 50%; 
+    justify-content: space-between;
+    font: 2rem sans-serif;;
+}
+
 .card {
     padding: 10px;
     margin: 10px;
+    height: auto;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-top {
+    align-self: flex-start;
+}
+
+.card-bottom {
+    align-self: flex-end;
 }
 
 img {
@@ -25,17 +47,28 @@ img {
 }
 
 h1 {
-    font-size: 2.25rem;
+    font-family: 'Pacifico', cursive;
+}
+
+h2 {
+    font-family: 'Single Day', cursive;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
 }
 
 p {
-    font-size: 0.75rem;
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 @media only screen and (max-width: 700px)  {
     p {
         display: none; 
     }   
+    .navbar {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 700px) {
@@ -45,6 +78,12 @@ p {
     }
     h1 {
         font-size: 2.5rem;
+    }    
+    h2 {
+        font-size: 2rem;
+    }    
+    h3 {
+        font-size: 1.5rem;
     }    
     p {
         font-size: 1rem;
@@ -59,6 +98,12 @@ p {
     h1 {
         font-size: 3rem;
     }    
+    h2{
+        font-size: 2.5rem;
+    }    
+    h3 {
+        font-size: 2rem;
+    }    
     p {
         font-size: 1.5rem;
     }
@@ -69,13 +114,5 @@ p {
     body {
         background-color: black;
         color: white;
-    }
-}
-
-/* Light mode */
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: white;
-        color: black;
     }
 }
